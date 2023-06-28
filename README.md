@@ -27,6 +27,11 @@ Common forms of credit card fraud include:
 
 The goal of this project is to build a fraud detection system using machine learning. This system will have the ability to classify an online credit card transaction as fraudulent or not fraudulent based on the transaction details. The machine learning model will learn from past credit card transaction data and use the patterns it learns from the data to identify if a new transaction is fraudulent or not. Furthermore, the model will be hosted as a web service that accepts credit card transaction details in a JSON data format and returns a prediction of whether the transaction is fraudulent or not. Deploying this model as a web service will be beneficial to financial institutions, banks, or online stores as they can easily feed transaction details to the machine learning system and the model will return its prediction. This can help dectecting in potential fraud in trade and therefore get the transaction flagged and declined. By identifying potential instances of fraud, companies can take steps to prevent fraudulent activity from occurring, which can save them a significant amount of money loss.
 
+### Challenges in credit card fraud detection
+- It's not always easy to agree on the ground truth for what "fraud" means.
+- Most of the transactions are tagged as not fraudulent, therefore leading to a class imbalance of the dataset
+- Fraud detection dataset contains sensitive pieces of information, therefore a lot of data representations a usually hidden
+
 <h2 id="topic2"> 2. Project files and folder explained</h2>
 
  ### Data
