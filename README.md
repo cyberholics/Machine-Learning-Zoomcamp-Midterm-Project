@@ -32,6 +32,12 @@ The goal of this project is to build a fraud detection system using machine lear
 - Most of the transactions are tagged as not fraudulent, therefore leading to a class imbalance of the dataset
 - Fraud detection dataset contains sensitive pieces of information, therefore a lot of data representations a usually hidden
 
+### Summary
+- I picked a problem to solve with machine learning (credit card fraud detection)
+- Used Kaggle dataset for (EDA and modeling)
+- Decided to go with xgboost model because of the class imbalance of the dataset
+- Deployed the model with [bentoml](https://www.bentoml.com/)
+
 <h2 id="topic2"> 2. Project files and folder explained</h2>
 
  ### Data
@@ -39,4 +45,4 @@ The goal of this project is to build a fraud detection system using machine lear
 ### Images 
  > This is a folder of images I used in this project
 ### credit card fraud detection.ipynb
- > This is a Jupyter notebook that contains the codes I used for data preparation, EDA(Explanatory data analysis), model training/selection, and hyperparameter tuning.
+ > This is a Jupyter notebook that contains the codes I used for data preparation, EDA(Explanatory data analysis), model training/selection, and hyperparameter tuning. It also contains code for saving the final model. For this, I used bentoml because bentoml solves issues that come with saving and loading machine learning models
