@@ -49,3 +49,5 @@ The goal of this project is to build a fraud detection system using machine lear
  > This is a Jupyter notebook that contains the codes I used for data preparation, EDA(Explanatory data analysis), model training/selection, and hyperparameter tuning. It also contains code for saving the final model. For this, I used pickle.
 ### Train.py
 > This s a python script for training the model. This script contains code i used to train my final model
+### xgb_model.bin
+> This is the model used for the prediction
