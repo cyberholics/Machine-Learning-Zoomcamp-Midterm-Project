@@ -37,7 +37,7 @@ The goal of this project is to build a fraud detection system using machine lear
 - Used Kaggle dataset for (EDA and modeling)
 - Decided to go with xgboost model because of the class imbalance of the dataset
 - One feature I noticed from the model is that, the farther the transaction is from home, the more likely it is fraudulent
-- Deployed the model with [bentoml](https://www.bentoml.com/)
+- Deployed the model as a web service to a cloud provider (AWS)
 
 <h2 id="topic2"> 2. Project files and folder explained</h2>
 
@@ -46,4 +46,6 @@ The goal of this project is to build a fraud detection system using machine lear
 ### Images 
  > This is a folder of images I used in this project
 ### credit card fraud detection.ipynb
- > This is a Jupyter notebook that contains the codes I used for data preparation, EDA(Explanatory data analysis), model training/selection, and hyperparameter tuning. It also contains code for saving the final model. For this, I used bentoml because bentoml solves issues that come with saving and loading machine learning models
+ > This is a Jupyter notebook that contains the codes I used for data preparation, EDA(Explanatory data analysis), model training/selection, and hyperparameter tuning. It also contains code for saving the final model. For this, I used pickle.
+### Train.py
+> This s a python script for training the model. This script contains code i used to train my final model
