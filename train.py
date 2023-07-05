@@ -2,11 +2,8 @@
 
 import pandas as pd 
 import numpy as np
-import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 import xgboost as xgb
-from sklearn.metrics import roc_auc_score
-from sklearn.metrics import confusion_matrix
 import pickle
 
 #read and load the data
@@ -18,6 +15,8 @@ print("The data has been read ")
 data_full_train, data_test = train_test_split(data,test_size=0.2,random_state=1)
 data_full_train = data_full_train.reset_index(drop=True)
 y_train=data_full_train.fraud
+del data_full_train["fraud"]
+print(data_full_train.shape)
 print("The data has been splitted")
 # training the model  
 
@@ -46,3 +45,4 @@ with open(model_output_file, 'wb') as f_out:
 
 print("model saved ")
     
+
