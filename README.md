@@ -37,7 +37,8 @@ The goal of this project is to build a fraud detection system using machine lear
 - Used Kaggle dataset for (EDA and modeling)
 - Decided to go with xgboost model because of the class imbalance of the dataset
 - One feature I noticed from the model is that, the farther the transaction is from home, the more likely it is fraudulent
-- Deployed the model as a web service to a cloud provider (AWS)
+- Deployed the model as a web service using Flask, I containerize the app with docker and deployed the docker container to a cloud 
+  provider (AWS elastic beanstalk)
 
 <h2 id="topic2"> 2. Project files and folder explained</h2>
 
