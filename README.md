@@ -8,7 +8,8 @@ This repo contains project work I carried out as the midterm project in the [mlz
 
 - [1. About the project](#topic1)
 - [2. Project files and folder explained](#topic2)
-- [Topic 3](#topic3)
+- [3. Running this project](#topic3)
+
 
 
 <h2 id="topic1"> 1. About the project</h2>
@@ -39,7 +40,10 @@ The goal of this project is to build a fraud detection system using machine lear
 - One feature I noticed from the model is that, the farther the transaction is from home, the more likely it is fraudulent
 - Deployed the model as a web service using Flask, I containerize the app with docker and deployed the docker container to a cloud 
   provider (AWS elastic beanstalk)
-
+  
+  > *Note* I was not able to deploy the web service to a cloud service provider because of difficulties in creating an AWS account 
+using my country's payment method. I am currently working on resolving this, I will update the change when I resolve this.
+  
 <h2 id="topic2"> 2. Project files and folder explained</h2>
 
 ### Data
@@ -47,7 +51,8 @@ The goal of this project is to build a fraud detection system using machine lear
 ### Images 
  > This is a folder of images I used in this project
 ### Pipfile and Pipfile.lock
- > These are dependencies management files used to create a virtual environment for the machine learning project.
+ > These are dependencies management files used to create a virtual environment for the machine learning project. This is to ensure the 
+   reproducibility of the project.
 ### credit card fraud detection.ipynb
  > This is a Jupyter notebook that contains the codes I used for data preparation, EDA(Explanatory data analysis), model training/selection, and hyperparameter tuning. It also contains code for saving the final model. For this, I used pickle.
 ### Dockerfile
@@ -60,3 +65,9 @@ The goal of this project is to build a fraud detection system using machine lear
  > This s a Python script for training the model. This script contains code I used to train my final model
 ### xgb_model.bin.
  > This is the model used for the prediction, it is saved to disk.
+
+
+<h2 id="topic3"> 3. Running this project</h2> 
+To run this project,follow these steps. 
+
+### Step 1
