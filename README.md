@@ -103,3 +103,8 @@ Run the following commands.
 - `gunicorn --bind 0.0.0.0:9696 predict.py`
 - From another terminal session from the cloned project directory, execute the following command to make a request to this web service
   ``` python request.py```
+- You should get an output of the model prediction.
+
+  ![prediction](https://github.com/cyberholics/mlzoomcamp-midterm-project/blob/main/images/Screen%20Shot%202023-07-06%20at%2020.30.41.png)
+  
+  > Note: For this request, I used a transaction detail from my test dataset.
