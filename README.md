@@ -81,3 +81,9 @@ To run this project, follow these steps. Navigate to your command line and enter
 ### Step 3: Install dependencies
 
 `pipenv install`
+
+### Step 3: Train the model
+Before you can train this model, you have to download the dataset with this link and edit the below code and put the dataset path (location the data is saved in your system).
+- Open the train.py script with your preferred code editor, I recommend VScode
+- Download the dataset with this [link](https://github.com/cyberholics/mlzoomcamp-midterm-project/blob/main/Data/data.md)
+- Edit this code. Replace it with the  path of the downloaded dataset. i.e the location the data is saved on your pc
