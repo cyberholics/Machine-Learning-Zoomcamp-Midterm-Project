@@ -109,11 +109,19 @@ Run the following commands.
   
   > Note: For this request, I used a transaction detail from my test dataset.
 
-  ### Step 6: Deploy the webservice to a docker container.
+  ### Step 6: Deploy the web service to a docker container.
   Pre-requisites: You should have Docker installed and running on the machine where you want to perform model deployment to Docker. Then run this command on your command line
   
  - `docker build -t "mlzoomcamp-midterm-project"`
    
-   You should get an output like this
+   You should get an output like this to indicate you've successfully built a docker image from the docker file
 
-   ![docker container]()
+   ![docker container](https://github.com/cyberholics/mlzoomcamp-midterm-project/blob/main/images/Screen%20Shot%202023-07-05%20at%2019.12.41.png)
+
+ - Create a docker container from the image. The model prediction script as a web service will then be running inside this container. Below command will create and run a docker container named mlzoomcamp-midterm-project (--name mlzoomcamp-midterm-project) running as a daemon i.e. non-interactive mode (-d), mapping the port 9696 on the host to port 9696 on the container (-p 9696:9696 first port is host port, second is container port. If you want to map a different port on host just change the first number), from image bank-td-prediction. The container will be deleted if stopped or when you shut down your machine (--rm).
+   
+`docker run --rm --name bank-td-cont -d -p 9696:9696 mlzoomcamp-midterm-project`
+
+You should get an output like this.
+
+![output]()
