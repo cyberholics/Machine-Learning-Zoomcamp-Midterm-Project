@@ -86,4 +86,6 @@ To run this project, follow these steps. Navigate to your command line and enter
 
 - Open the train.py script with your preferred code editor, I recommend VScode
 - Download the dataset with this [link](https://github.com/cyberholics/mlzoomcamp-midterm-project/blob/main/Data/data.md)
-- Edit this code. Replace it with the  path of the downloaded dataset. i.e the location the data is saved on your pc
+- Edit this code. Replace it with the  path of the downloaded dataset. i.e the location the data is saved on your PC
+![code to edit](https://github.com/cyberholics/mlzoomcamp-midterm-project/blob/main/images/Screen%20Shot%202023-07-06%20at%2011.01.52.png)
+- Run the training script with this command `python train.py`
