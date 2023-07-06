@@ -68,6 +68,12 @@ using my country's payment method. I am currently working on resolving this, I w
 
 
 <h2 id="topic3"> 3. Running this project</h2> 
-To run this project,follow these steps. 
+To run this project, follow these steps. 
 
-### Step 1
+### Step 1: Clone the repo
+
+Navigate to your command line and enter this command.
+
+`git clone https://github.com/cyberholics/mlzoomcamp-midterm-project.git`
+
+### 
