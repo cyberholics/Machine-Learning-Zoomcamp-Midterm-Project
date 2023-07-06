@@ -62,7 +62,7 @@ using my country's payment method. I am currently working on resolving this, I w
  > This is a Python script used to create a Flask app to run the prediction service. It's a web service.
 ### request.py
  >This script sends a request to the web service(predict.py) which accepts transaction details and returns the prediction of whether the transaction is fraudulent or not. I used one transaction detail to run this request.
-### Train.py
+### train.py
  > This is a Python script for training the model. This script contains code I used to train my final model
 ### xgb_model.bin.
  > This is the model used for the prediction, it is saved to disk.
