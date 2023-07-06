@@ -62,18 +62,22 @@ using my country's payment method. I am currently working on resolving this, I w
 ### request.py
  >This script sends a request to the web service(predict.py) which accepts transaction details and returns the prediction of whether the transaction is fraudulent or not. I used one transaction detail to run this request.
 ### Train.py
- > This s a Python script for training the model. This script contains code I used to train my final model
+ > This is a Python script for training the model. This script contains code I used to train my final model
 ### xgb_model.bin.
  > This is the model used for the prediction, it is saved to disk.
 
 
 <h2 id="topic3"> 3. Running this project</h2> 
-To run this project, follow these steps. 
+To run this project, follow these steps. Navigate to your command line and enter these commands.
 
 ### Step 1: Clone the repo
 
-Navigate to your command line and enter this command.
-
 `git clone https://github.com/cyberholics/mlzoomcamp-midterm-project.git`
 
-### 
+### Step 2: Enter the project directory
+
+`cd mlzoomcamp-midterm-project/`
+
+### Step 3: Install dependencies
+
+`pipenv install`
