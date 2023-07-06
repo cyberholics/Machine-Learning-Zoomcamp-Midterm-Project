@@ -143,3 +143,5 @@ Run the following commands.
 
 ### Step 7: Cloud deployment
 Coming soon
+
+If you have any questions, reach out to me via email at victorkingoshimua@gmail.com
