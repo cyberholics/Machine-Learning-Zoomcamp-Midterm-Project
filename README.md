@@ -112,16 +112,29 @@ Run the following commands.
   ### Step 6: Deploy the web service to a docker container.
   Pre-requisites: You should have Docker installed and running on the machine where you want to perform model deployment to Docker. Then run this command on your command line
   
- - `docker build -t "mlzoomcamp-midterm-project"`
+ - `docker build -t "mlzoomcamp-project"`
    
    You should get an output like this to indicate you've successfully built a docker image from the docker file
 
    ![docker container](https://github.com/cyberholics/mlzoomcamp-midterm-project/blob/main/images/Screen%20Shot%202023-07-05%20at%2019.12.41.png)
 
- - Create a docker container from the image. The model prediction script as a web service will then be running inside this container. Below command will create and run a docker container named mlzoomcamp-midterm-project (--name mlzoomcamp-midterm-project) running as a daemon i.e. non-interactive mode (-d), mapping the port 9696 on the host to port 9696 on the container (-p 9696:9696 first port is host port, second is container port. If you want to map a different port on host just change the first number), from image bank-td-prediction. The container will be deleted if stopped or when you shut down your machine (--rm).
+ - Create a docker container from the image. The model prediction script as a web service will then be running inside this container. Below command will create and run a docker container named mlzoomcamp-project (--name mlzoomcamp-project) running as a daemon i.e. non-interactive mode (-d), mapping the port 9696 on the host to port 9696 on the container (-p 9696:9696 first port is host port, second is container port. If you want to map a different port on host just change the first number), from image bank-td-prediction. The container will be deleted if stopped or when you shut down your machine (--rm).
    
-`docker run --rm --name bank-td-cont -d -p 9696:9696 mlzoomcamp-midterm-project`
+`docker run --rm --name bank-td-cont -d -p 9696:9696 mlzoomcamp-project`
 
 You should get an output like this.
 
-![output]()
+![output](https://github.com/cyberholics/mlzoomcamp-midterm-project/blob/main/images/Screen%20Shot%202023-07-06%20at%2010.18.40.png)
+
+- Finally, Test sending some sample transaction data to the web service and see the results. For this, you can use the request.py script provided as part of this repo, which has some sample transaction details  and can make a request to the Web app service.
+
+From another terminal session from the cloned project directory, execute the following command to make a request to this web service
+
+`python request.py`
+
+You should get an output like this
+
+![prediction](https://github.com/cyberholics/mlzoomcamp-midterm-project/blob/main/images/Screen%20Shot%202023-07-06%20at%2020.30.41.png) 
+
+### Step 7: Cloud deployment
+Coming soon
