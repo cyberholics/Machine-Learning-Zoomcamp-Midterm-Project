@@ -108,3 +108,12 @@ Run the following commands.
   ![prediction](https://github.com/cyberholics/mlzoomcamp-midterm-project/blob/main/images/Screen%20Shot%202023-07-06%20at%2020.30.41.png)
   
   > Note: For this request, I used a transaction detail from my test dataset.
+
+  ### Step 6: Deploy the webservice to a docker container.
+  Pre-requisites: You should have Docker installed and running on the machine where you want to perform model deployment to Docker. Then run this command on your command line
+  
+ - `docker build -t "mlzoomcamp-midterm-project"`
+   
+   You should get an output like this
+
+   ![docker container]()
