@@ -42,13 +42,21 @@ The goal of this project is to build a fraud detection system using machine lear
 
 <h2 id="topic2"> 2. Project files and folder explained</h2>
 
- ### Data
+### Data
  > This folder gives you access to the data used in this project
 ### Images 
  > This is a folder of images I used in this project
+### Pipfile and Pipfile.lock
+ > These are dependencies management files used to create a virtual environment for the machine learning project.
 ### credit card fraud detection.ipynb
  > This is a Jupyter notebook that contains the codes I used for data preparation, EDA(Explanatory data analysis), model training/selection, and hyperparameter tuning. It also contains code for saving the final model. For this, I used pickle.
+### Dockerfile
+ > This is a docker image file, this file is used to create instances of a docker container. It defines what will happen in the docker container.
+### Predict.py 
+ > This is a Python script used to create a Flask app to run the prediction service. It's a web service.
+### request.py
+ >This script sends a request to the web service(predict.py) which accepts transaction details and returns the prediction of whether the transaction is fraudulent or not. I used one transaction detail to run this request.
 ### Train.py
-> This s a python script for training the model. This script contains code i used to train my final model
-### xgb_model.bin
-> This is the model used for the prediction
+ > This s a Python script for training the model. This script contains code I used to train my final model
+### xgb_model.bin.
+ > This is the model used for the prediction, it is saved to disk.
