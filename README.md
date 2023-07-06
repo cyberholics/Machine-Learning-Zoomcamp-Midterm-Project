@@ -40,6 +40,7 @@ The goal of this project is to build a fraud detection system using machine lear
 - One feature I noticed from the model is that, the farther the transaction is from home, the more likely it is fraudulent
 - Deployed the model as a web service using Flask, I containerize the app with docker and deployed the docker container to a cloud 
   provider (AWS elastic beanstalk)
+- The deployed service takes in transaction details as a JSON file and returns a prediction for the transaction as fradulent or not.
   
   > *Note* I was not able to deploy the web service to a cloud service provider because of difficulties in creating an AWS account 
 using my country's payment method. I am currently working on resolving this, I will update the change when I resolve this.
@@ -89,3 +90,13 @@ To run this project, follow these steps. Navigate to your command line and enter
 - Edit this code. Replace it with the  path of the downloaded dataset. i.e the location the data is saved on your PC
 ![code to edit](https://github.com/cyberholics/mlzoomcamp-midterm-project/blob/main/images/Screen%20Shot%202023-07-06%20at%2011.01.52.png)
 - Run the training script with this command `python train.py`
+  You should get an output like this if the script runs successfully
+  ![code output](https://github.com/cyberholics/mlzoomcamp-midterm-project/blob/main/images/Screen%20Shot%202023-07-06%20at%2011.00.25.png)
+
+### Step 5: Deploy the model as a web service 
+
+Deploying the model as a web service enables one to use the model to make predictions about future transactions. To do this,
+Run the following commands.
+- `gunicorn --bind 0.0.0.0:9696 predict.py`
+- From other terminal session from the cloned project directory, execute the following command to make a request to this web service
+- ``` python request.py```
