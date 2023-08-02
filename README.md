@@ -141,7 +141,7 @@ Run the following commands.
 
   ![prediction](https://github.com/cyberholics/mlzoomcamp-midterm-project/blob/main/images/Screen%20Shot%202023-07-06%20at%2020.30.41.png) 
 
-### Step 7: Cloud deployment
-Coming soon
+### Step 7: Cloud deployment: AWS Elastic Beanstalk
+
 
 If you have any questions, reach out to me via email at victorkingoshimua@gmail.com
