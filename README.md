@@ -124,8 +124,8 @@ Run the following commands.
    second is container port. If you want to map a different port on host just change the first number), from image bank-td-prediction. 
    The container will be deleted if stopped or when you shut down your machine (--rm).
    
-   `docker run --rm --name bank-td-cont -d -p 9696:9696 mlzoomcamp-project`
-   
+  `docker run -it --rm -p 9696:9696 mlzoomcamp-midterm-project`
+
      You should get an output like this.
 
     ![output](https://github.com/cyberholics/mlzoomcamp-midterm-project/blob/main/images/Screen%20Shot%202023-07-06%20at%2010.18.40.png)
