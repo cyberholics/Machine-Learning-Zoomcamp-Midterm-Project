@@ -110,9 +110,9 @@ Run the following commands.
   > Note: For this request, I used a transaction detail from my test dataset.
 
   ### Step 6: Deploy the web service to a docker container.
-  Pre-requisites: You should have Docker installed and running on the machine where you want to perform model deployment to Docker. Then run this command on your command line
+  Pre-requisites: You should have Docker installed, and docker deamon running on the machine where you want to perform model deployment to Docker. Then run this command on your command line
   
- - `docker build -t "mlzoomcamp-project"`
+ - `docker build -t mlzoomcamp-project .`
    
    You should get an output like this to indicate you've successfully built a docker image from the docker file
 
