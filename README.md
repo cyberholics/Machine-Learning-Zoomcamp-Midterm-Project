@@ -126,7 +126,7 @@ Run the following commands.
    
   `docker run -it --rm -p 9696:9696 mlzoomcamp-midterm-project`
 
-     You should get an output like this.
+    You should get an output like this.
 
     ![output](https://github.com/cyberholics/mlzoomcamp-midterm-project/blob/main/images/Screen%20Shot%202023-07-06%20at%2010.18.40.png)
 
