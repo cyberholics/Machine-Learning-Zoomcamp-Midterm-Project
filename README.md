@@ -112,7 +112,7 @@ Run the following commands.
   ### Step 6: Deploy the web service to a docker container.
   Pre-requisites: You should have Docker installed, and docker deamon running on the machine where you want to perform model deployment to Docker. Then run this command on your command line
   
- - `docker build -t mlzoomcamp-midterm-project .`
+   `docker build -t mlzoomcamp-midterm-project .`
    
    You should get an output like this to indicate you've successfully built a docker image from the docker file
 
@@ -120,7 +120,7 @@ Run the following commands.
 
  - Create a docker container from the image. The model prediction script as a web service will then be running inside this container.
    
-  - `docker run -it --rm -p 9696:9696 mlzoomcamp-midterm-project`
+   `docker run -it --rm -p 9696:9696 mlzoomcamp-midterm-project`
     
   - The above command will create and run a docker container named mlzoomcamp-midterm-project, running as a daemon i.e. 
    non-interactive mode (-d), mapping the port 9696 on the host to port 9696 on the container (-p 9696:9696 first port is host port, 
