@@ -87,7 +87,7 @@ To run this project, follow these steps. Navigate to your command line and enter
 
 - Open the train.py script with your preferred code editor, I recommend VScode
 - Download the dataset with this [link](https://github.com/cyberholics/mlzoomcamp-midterm-project/blob/main/Data/data.md)
-- Edit this code. Replace it with the  path of the downloaded dataset. i.e the location the data is saved on your PC
+- Edit this code. Replace it with the  path of the downloaded dataset. i.e. the location where the data is saved on your PC
   
 ![code to edit](https://github.com/cyberholics/mlzoomcamp-midterm-project/blob/main/images/Screen%20Shot%202023-07-06%20at%2011.01.52.png) 
 
@@ -100,7 +100,7 @@ To run this project, follow these steps. Navigate to your command line and enter
 
 Deploying the model as a web service enables one to use the model to make predictions about future transactions. To do this,
 Run the following commands.
-- `gunicorn --bind 0.0.0.0:9696 predict.py`
+- `gunicorn --bind 0.0.0.0:9696 predict:app`
 - From another terminal session from the cloned project directory, execute the following command to make a request to this web service
   ``` python request.py```
 - You should get an output of the model prediction.
