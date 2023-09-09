@@ -122,8 +122,8 @@ Run the following commands.
    
    `docker run -it --rm -p 9696:9696 mlzoomcamp-midterm-project`
     
-  - The above command will create and run a docker container named mlzoomcamp-midterm-project, running as a daemon i.e. 
-   non-interactive mode (-d), mapping the port 9696 on the host to port 9696 on the container (-p 9696:9696 first port is host port, 
+  - The above command will create and run a docker container named mlzoomcamp-midterm-project, mapping the port 9696 on the host to 
+    port 9696 on the container (-p 9696:9696 first port is host port, 
    second is container port. If you want to map a different port on host just change the first number)
    The container will be deleted if stopped or when you shut down your machine (--rm).
    
